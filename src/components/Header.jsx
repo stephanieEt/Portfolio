@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.jpg";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
     <div className="header">
       <NavLink to="/">
-        <img src={logo} alt="Initiales de Stéphanie Etourneau" />
+        <Logo />
       </NavLink>
       <nav>
         <ul>

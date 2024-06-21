@@ -1,10 +1,10 @@
-import logo from "../assets/images/logo.jpg";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <div className="footer">
       <h3>Stéphanie Etourneau</h3>
-      <img src={logo} alt="Logo Kasa" />
+      <Logo />
       <p>© 2024 || Tous droits réservés</p>
     </div>
   );

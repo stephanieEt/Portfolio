@@ -1,7 +1,15 @@
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
+    <div className="home-container">
+      <div className="content">
+        <h1 className="animated-text">
+          Je suis Stéphanie Etourneau.
+          <br />
+          <br />
+          <br />
+          Bienvenue sur mon portfolio.
+        </h1>
+      </div>
     </div>
   );
 };
