@@ -4,7 +4,9 @@ import logo from "../assets/images/logo.jpg";
 const Header = () => {
   return (
     <div className="header">
-      <img src={logo} alt="Initiales de Stéphanie Etourneau" />
+      <NavLink to="/">
+        <img src={logo} alt="Initiales de Stéphanie Etourneau" />
+      </NavLink>
       <nav>
         <ul>
           <NavLink to="/Apropos">
