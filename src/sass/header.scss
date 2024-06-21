@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    margin-top: 25px;
+    background-color: #eb850cd1;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin-left: 6vw;
+
+        @media screen and (max-width: 768px) {
+            object-fit: contain;
+            width: 120px;
+        }
+
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-right: 6vw;
+            gap: 20px;
+
+            @media screen and (max-width: 768px) {
+                gap: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 1);
+                font-size: 24px;
+                font-weight: 500;
+                font-family: "Montserrat";
+
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                &.underline {
+                    text-decoration: underline;
+                }
+            }
+
+            li {
+                margin: 0 10px;
+                list-style: none;
+
+                @media screen and (max-width: 768px) {
+                    max-height: 16px
+                }
+            }
+        }
+    }
+}
