@@ -1,10 +1,5 @@
 const Logo = () => {
-  return (
-    <div className="logo">
-      <span>S</span>
-      <span>E</span>
-    </div>
-  );
+  return <div className="logo">SE</div>;
 };
 
 export default Logo;
