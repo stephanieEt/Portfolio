@@ -14,13 +14,28 @@
     }
 
     .animated-text {
-        font-size: 2vw;
-        color: rgb(213 100 18 / 82%);
+        color: rgba(249, 245, 242, 0.82);
         animation: fadeIn 3s ease-in-out;
         font-family: 'Montserrat';
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            font-size: 2vw;
+        }
+
+        h2 {
+            font-size: 2vw;
+        }
 
         @media screen and (max-width: 768px) {
             font-size: 2.5vw;
+        }
+
+        @media screen and (max-width: 360px) {
+            font-size: 5vw;
+
         }
     }
 

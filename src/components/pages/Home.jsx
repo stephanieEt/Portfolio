@@ -2,13 +2,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="content">
-        <h1 className="animated-text">
-          Je suis Stéphanie Etourneau.
-          <br />
-          <br />
-          <br />
-          Bienvenue sur mon portfolio.
-        </h1>
+        <div className="animated-text">
+          <h1>Je suis Stéphanie Etourneau.</h1>
+          <h2>Bienvenue sur mon portfolio.</h2>
+        </div>
       </div>
       <div id="container">
         <div className="steam" id="steam1">

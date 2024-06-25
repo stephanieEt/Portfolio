@@ -59,7 +59,7 @@ const Header = () => {
           <NavLink to="/Projets" onClick={() => setIsOpen(false)}>
             <li>Mes projets</li>
           </NavLink>
-          <NavLink to="/Compétences" onClick={() => setIsOpen(false)}>
+          <NavLink to="/Competences" onClick={() => setIsOpen(false)}>
             <li>Mes compétences</li>
           </NavLink>
           <NavLink to="/Contact" onClick={() => setIsOpen(false)}>
