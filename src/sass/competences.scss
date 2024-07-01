@@ -1,16 +1,21 @@
 .skills {
-    height: 70vh;
+    height: 71vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin-left: 70px;
+    margin-left: 80px;
 
 
 
     img {
-        height: 20vh;
-        object-fit: cover;
+        height: 15vh;
+        width: 15vw;
+        object-fit: contain;
 
+    }
+
+    @media (max-width: 768px) {
+        margin-left: 50px;
     }
 
 

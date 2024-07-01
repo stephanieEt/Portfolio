@@ -1,11 +1,11 @@
 import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Projets from "./components/pages/Projets";
-import Apropos from "./components/pages/Apropos";
+import Projets from "./pages/Projets";
+import Apropos from ".//pages/Apropos";
 import Footer from "./components/Footer";
-import Home from "./components/pages/Home";
-import Competences from "./components/pages/Competences";
-import Contact from "./components/pages/Contact";
+import Home from ".//pages/Home";
+import Competences from ".//pages/Competences";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (

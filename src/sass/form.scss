@@ -1,0 +1,16 @@
+.contact {
+    background-color: orange;
+
+    @media (max-width: 1250px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        .container {
+            width: 50%;
+        }
+    }
+
+}

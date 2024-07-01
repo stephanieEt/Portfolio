@@ -2,16 +2,11 @@
     background-image: url("./assets/images/bureau.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 71vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .content {
-        padding: 20px;
-        border-radius: 10px;
-        margin-bottom: 5.5em;
-    }
 
     .animated-text {
         color: rgba(249, 245, 242, 0.82);
@@ -20,22 +15,38 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 5.5em;
 
         h1 {
             font-size: 2vw;
+            font-weight: 700;
+
+            @media screen and (max-width: 768px) {
+                font-size: 3.5vw;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 6vw;
+                font-weight: 400;
+
+            }
         }
 
         h2 {
             font-size: 2vw;
-        }
+            font-weight: 800;
 
-        @media screen and (max-width: 768px) {
-            font-size: 2.5vw;
-        }
+            @media screen and (max-width: 768px) {
+                font-size: 3.5vw;
+            }
 
-        @media screen and (max-width: 360px) {
-            font-size: 5vw;
+            @media screen and (max-width: 360px) {
+                font-size: 6vw;
+                font-weight: 400;
 
+            }
         }
     }
 
@@ -49,151 +60,4 @@
         }
     }
 
-    #container {
-        position: absolute;
-        top: 80%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        width: 50vw;
-    }
-
-    .steam {
-        position: absolute;
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        background-color: #f6e9e9ce;
-        margin-top: -75px;
-        margin-left: 75px;
-        z-index: 0;
-        opacity: 0;
-    }
-
-    #steam1 {
-        -webkit-animation: steam1 4s ease-out infinite;
-        animation: steam1 4s ease-out infinite;
-    }
-
-    #steam3 {
-        -webkit-animation: steam1 4s ease-out 1s infinite;
-        animation: steam1 4s ease-out 1s infinite;
-    }
-
-    @-webkit-keyframes steam1 {
-        0% {
-            transform: translateY(0) translateX(0) scale(0.25);
-            opacity: 0.2;
-        }
-
-        100% {
-            transform: translateY(-200px) translateX(-20px) scale(1);
-            opacity: 0;
-        }
-    }
-
-    @keyframes steam1 {
-        0% {
-            transform: translateY(0) translateX(0) scale(0.25);
-            opacity: 0.2;
-        }
-
-        100% {
-            transform: translateY(-200px) translateX(-20px) scale(1);
-            opacity: 0;
-        }
-    }
-
-    #steam2 {
-        -webkit-animation: steam2 4s ease-out 0.5s infinite;
-        animation: steam2 4s ease-out 0.5s infinite;
-    }
-
-    #steam4 {
-        -webkit-animation: steam2 4s ease-out 1.5s infinite;
-        animation: steam2 4s ease-out 1.5s infinite;
-    }
-
-    @-webkit-keyframes steam2 {
-        0% {
-            transform: translateY(0) translateX(0) scale(0.25);
-            opacity: 0.2;
-        }
-
-        100% {
-            transform: translateY(-200px) translateX(20px) scale(1);
-            opacity: 0;
-        }
-    }
-
-    @keyframes steam2 {
-        0% {
-            transform: translateY(0) translateX(0) scale(0.25);
-            opacity: 0.2;
-        }
-
-        100% {
-            transform: translateY(-200px) translateX(20px) scale(1);
-            opacity: 0;
-        }
-    }
-
-    #cup {
-        z-index: 1;
-    }
-
-    #cup-body {
-        position: absolute;
-        height: 200px;
-        width: 300px;
-        border-radius: 0 0 150px 150px;
-        background-color: #fff;
-        margin: auto;
-        display: inline-block;
-        overflow: hidden;
-        z-index: 1;
-    }
-
-    #cup-shade {
-        position: relative;
-        height: 300px;
-        width: 200px;
-        background-color: #F3F3F3;
-        display: inline-block;
-        margin-left: 42%;
-        margin-top: -3px;
-        transform: rotate(50deg);
-        z-index: 1;
-    }
-
-    #cup-handle {
-        position: relative;
-        height: 75px;
-        width: 80px;
-        border-radius: 0 150px 150px 0;
-        border: 15px solid #F3F3F3;
-        margin-bottom: 95px;
-        margin-left: 250px;
-        display: inline-block;
-        z-index: 0;
-    }
-
-    #saucer {
-        position: absolute;
-        height: 30px;
-        width: 300px;
-        border-radius: 0 0 100px 100px;
-        background-color: #F9F9F9;
-        margin-top: -32px;
-        margin-left: 5px;
-        z-index: 2;
-    }
-
-    #shadow {
-        height: 10px;
-        width: 300px;
-        border-radius: 50%;
-        margin-top: -5px;
-        margin-left: 6px;
-        background-color: #d9a02f;
-    }
 }
