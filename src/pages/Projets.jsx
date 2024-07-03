@@ -1,6 +1,6 @@
 const Projets = () => {
   return (
-    <div className="container-projet">
+    <div className="container-projet container-page">
       <div className="row">
         <div className="col-md-6 card-img-projet">
           <a href="#" target="_blank">

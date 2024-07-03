@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="home-container container-page">
       <div className="animated-text">
         <h1>Je suis Stéphanie Etourneau.</h1>
         <h2>Bienvenue sur mon portfolio.</h2>

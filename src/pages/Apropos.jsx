@@ -1,11 +1,11 @@
 const Apropos = () => {
   return (
-    <div className="presentation container-fluid text-center">
+    <div className="presentation container-fluid text-center container-page">
       <div className="row row-presentation">
         <div className="col-md-8 col-sm-12 mt-5 d-flex align-items-center">
           <p>
             Je suis <span>Stéphanie Etourneau</span>, développeuse front-end en
-            reconversion professionnelle Avec une carrière riche en expériences
+            reconversion professionnelle. Avec une carrière riche en expériences
             diverses, j'ai décidé de me réorienter pour le développement web.
             <br /> Ma passion pour la création d'interfaces utilisateur
             intuitives et esthétiques m'a conduite à entreprendre cette nouvelle
@@ -18,10 +18,10 @@ const Apropos = () => {
             ergonomiques et attrayantes.
           </p>
         </div>
-        <div className="col-md-4 col-sm-12 d-flex align-items-center">
+        <div className="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
           <img
-            src="https://img.freepik.com/photos-gratuite/jolie-fille-blonde-chemise-rayee-montrant-signe-paix-vue-face-dame-francaise-riant-posant-mur-bleu_197531-14466.jpg"
-            alt=""
+            src="./src/assets/images/profile.png"
+            alt="photo Stéphanie Etourneau"
           />
         </div>
       </div>
