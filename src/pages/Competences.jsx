@@ -1,6 +1,6 @@
 const Competences = () => {
   return (
-    <div className="skills">
+    <div className="skills container-page">
       <img
         src="./src/assets/images/HTML.png"
         alt="logo de langage de balisage HTML"
