@@ -9,7 +9,7 @@
     bottom: 0;
     position: fixed;
     width: 100%;
-    height: 150px;
+    height: 100px;
 
 
 
@@ -21,6 +21,7 @@
         justify-content: space-between;
         width: 100%;
         max-width: 800px;
+        margin-top: 25px;
 
 
         ul {
@@ -36,7 +37,7 @@
 
                 a {
                     color: #333;
-                    font-size: 24px;
+                    font-size: 20px;
 
                     &:hover {
                         color: white;
@@ -46,19 +47,16 @@
         }
     }
 
-    h3,
-    p {
-        margin: 5px 0;
-    }
-
     h3 {
         font-size: 24px;
         color: #333;
         font-family: 'great Vibes';
+        margin-bottom: 0px;
+        font-weight: 500;
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
         color: #666;
     }
 }
