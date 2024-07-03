@@ -1,0 +1,63 @@
+.home-container {
+    background-image: url("./assets/images/bureau.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .animated-text {
+        color: rgba(249, 245, 242, 0.82);
+        animation: fadeIn 3s ease-in-out;
+        font-family: 'Montserrat';
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 5.5em;
+
+        h1 {
+            font-size: 2vw;
+            font-weight: 700;
+
+            @media screen and (max-width: 768px) {
+                font-size: 3.5vw;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 6vw;
+                font-weight: 400;
+
+            }
+        }
+
+        h2 {
+            font-size: 2vw;
+            font-weight: 800;
+
+            @media screen and (max-width: 768px) {
+                font-size: 3.5vw;
+            }
+
+            @media screen and (max-width: 360px) {
+                font-size: 6vw;
+                font-weight: 400;
+
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+}

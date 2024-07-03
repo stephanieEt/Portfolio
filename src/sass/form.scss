@@ -1,0 +1,29 @@
+.contact {
+    background-color: #c18b3d80;
+
+
+    @media (max-width: 1250px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1250px) {
+        .container {
+            width: 50%;
+        }
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        border: thick double black;
+        transition: all 0.3s ease-in 0s;
+
+
+        &:hover {
+            background-color: rgb(223, 148, 94);
+            border: thick double black;
+        }
+    }
+}

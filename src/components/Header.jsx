@@ -1,22 +1,39 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.jpg";
+import Logo from "./Logo";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="header">
-      <img src={logo} alt="Initiales de Stéphanie Etourneau" />
+      <NavLink to="/">
+        <Logo />
+      </NavLink>
       <nav>
-        <ul>
-          <NavLink to="/Apropos">
+        <div
+          className={`burger ${isOpen ? "open" : ""}`}
+          onClick={handleToggle}
+        >
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
+        <ul className={isOpen ? "nav-active" : ""}>
+          <NavLink to="/Apropos" onClick={() => setIsOpen(false)}>
             <li>A propos</li>
           </NavLink>
-          <NavLink to="/Projets">
+          <NavLink to="/Projets" onClick={() => setIsOpen(false)}>
             <li>Mes projets</li>
           </NavLink>
-          <NavLink to="/Compétences">
+          <NavLink to="/Competences" onClick={() => setIsOpen(false)}>
             <li>Mes compétences</li>
           </NavLink>
-          <NavLink to="/Contact">
+          <NavLink to="/Contact" onClick={() => setIsOpen(false)}>
             <li>Contactez-moi</li>
           </NavLink>
         </ul>
@@ -24,4 +41,5 @@ const Header = () => {
     </div>
   );
 };
+
 export default Header;

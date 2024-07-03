@@ -1,10 +1,28 @@
-import logo from "../assets/images/logo.jpg";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <div className="footer">
+      <div className="contactLinks">
+        <ul>
+          <li>
+            <a href="#">
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       <h3>Stéphanie Etourneau</h3>
-      <img src={logo} alt="Logo Kasa" />
       <p>© 2024 || Tous droits réservés</p>
     </div>
   );
