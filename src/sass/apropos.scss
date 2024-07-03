@@ -1,13 +1,15 @@
 .presentation {
     font-family: 'Montserrat', sans-serif;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
 
-    .row-presentation {
-        height: 71vh;
-    }
 
     p {
         letter-spacing: 0.3rem;
-        font-weight: 700;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 1em;
+        text-shadow: 4px 1px 4px rgb(237, 115, 15);
+        line-height: 2;
     }
 }
