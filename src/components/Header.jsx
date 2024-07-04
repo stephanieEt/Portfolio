@@ -1,20 +1,42 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 import Logo from "./Logo";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className="header">
-      <NavLink to="/">
+    <Navbar
+      bg="light"
+      expand="md"
+      className="header sticky-top container-header"
+    >
+      <NavLink to="/" className="navbar-brand">
         <Logo />
       </NavLink>
-      <nav>
+      <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar.Collapse id="navbarNav">
+        <Nav className="ml-auto">
+          <NavLink className="nav-link" to="/Apropos">
+            A propos
+          </NavLink>
+          <NavLink className="nav-link" to="/Projets">
+            Mes projets
+          </NavLink>
+          <NavLink className="nav-link" to="/Competences">
+            Mes compétences
+          </NavLink>
+          <NavLink className="nav-link" to="/Contact">
+            Contactez-moi
+          </NavLink>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
+
+export default Header;
+
+/*
+/* <nav>
         <div
           className={`burger ${isOpen ? "open" : ""}`}
           onClick={handleToggle}
@@ -37,9 +59,4 @@ const Header = () => {
             <li>Contactez-moi</li>
           </NavLink>
         </ul>
-      </nav>
-    </div>
-  );
-};
-
-export default Header;
+      </nav>*/

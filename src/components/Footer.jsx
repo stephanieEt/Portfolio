@@ -6,17 +6,20 @@ const Footer = () => {
       <div className="contactLinks">
         <ul>
           <li>
-            <a href="#">
+            <a href="mailto:stetourneau@gmail.com">
               <i className="fa-solid fa-envelope"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/st%C3%A9phanie-etourneau-42b7901b7/"
+              target="_blank"
+            >
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/stephanieEt" target="_blank">
               <i className="fa-brands fa-github"></i>
             </a>
           </li>
