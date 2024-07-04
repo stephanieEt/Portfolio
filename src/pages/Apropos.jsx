@@ -19,10 +19,7 @@ const Apropos = () => {
           </p>
         </div>
         <div className="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
-          <img
-            src="./src/assets/images/profile1.webp"
-            alt="photo Stéphanie Etourneau"
-          />
+          <img src="./images/profile1.webp" alt="photo Stéphanie Etourneau" />
         </div>
       </div>
     </div>
