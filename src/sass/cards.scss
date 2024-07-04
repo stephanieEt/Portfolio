@@ -13,11 +13,6 @@
         object-fit: cover;
         border-radius: 20px;
 
-        @media screen and (max-width: 500px) {
-
-            min-height: 200px;
-        }
-
         @media screen and (max-width: 768px) {
             max-height: 250px;
         }
@@ -32,6 +27,10 @@
         margin-top: 20px;
     }
 
+}
+
+.container-header {
+    border-bottom: none;
 }
 
 .container-link-projet {

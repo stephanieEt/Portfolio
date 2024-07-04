@@ -1,37 +1,37 @@
 [
     {
       "id": 1,
-      "name": "Booki",
+      "title": "Booki",
       "description": "Réalisation d'une page d'accueil pour une agence de voyage.",
-      "langages": "Structure et style de la page web avec HTML et CSS ",
-      "picture": "./src/assets/images/booki.png",
+      "langages": "Structure et style de la page web avec HTML et CSS. ",
+      "picture": "./src/assets/images/booki.webp",
       "url": "https://stephanieet.github.io/booki-starter-code/"
     },
   
     {
       "id": 2,
-      "name": "OhMyFood",
-      "description": "Amélioration de l'interface d'un site mobile avec des animations CSS. La tâche principale est d'intégrer ume maquette en mobile first, et mettre en ouvre des animations CSS",
-      "langages": "Les outils et compétences utilisés sont le HTML, le CSS et Sass",
-      "picture": "./src/assets/images/ohmyfood.png",
+      "title": "OhMyFood",
+      "description": "Amélioration de l'interface d'un site mobile avec des animations CSS. La tâche principale est d'intégrer une maquette en mobile first, et mettre en oeuvre des animations CSS.",
+      "langages": "Les outils et compétences utilisés sont le HTML, le CSS et Sass.",
+      "picture": "./src/assets/images/ohmyfood.webp",
       "url": "https://stephanieet.github.io/Projet4/index.html"
     },
   
     {
       "id": 3,
-      "name": "Sophie Bluel",
-      "description": "Création d'une page web dynamique pour le site internet d'une architecte d'intèrieur en utilisant JavaScript et en communiquant avec une API",
-      "langages": "Les technologies suivantes ont étaient utilisés : HTML, CSS et JavaScript",
-      "picture": "./src/assets/images/sophie.png",
+      "title": "Sophie Bluel",
+      "description": "Création d'une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API.",
+      "langages": "Les technologies suivantes ont étaient utilisés : HTML, CSS et JavaScript.",
+      "picture": "./src/assets/images/sophie.webp",
       "url": "https://github.com/stephanieEt/Projet6/tree/master/FrontEnd"
     },
   
     {
       "id": 4,
-      "name": "Kasa",
-      "description": "Création d'une application web de location immobilière avec React. Ce projet a permis l'implémentation du front-end d'une application en utilisant React et React Router pour créer uneexpérience utilisateur moderne et réactive.",
-      "langages": "Les technologies suivantes ont étaient utilisés : HTML, CSS, Sass et JavaScript",
-      "picture": "./src/assets/images/kasa.png",
+      "title": "Kasa",
+      "description": "Création d'une application web de location immobilière avec React. Ce projet a permis l'implémentation du front-end d'une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
+      "langages": "Les technologies suivantes ont étaient utilisés : HTML, CSS, Sass, JavaScript et React.",
+      "picture": "./src/assets/images/kasa.webp",
       "url": "https://github.com/stephanieEt/Projet8/tree/main/Projet8react"
     }
 ]
