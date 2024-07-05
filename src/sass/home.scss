@@ -1,5 +1,5 @@
-.home-container {
-    background-image: url("./assets/images/bureau.jpg");
+/*.home-container {
+    background-image: url("https://stephanieet.github.io/Portfolio/assets/images/bureau.webp");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -58,4 +58,36 @@
         }
     }
 
+}*/
+.home-container {
+    background-image: url("https://stephanieet.github.io/Portfolio/assets/images/fond.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* Assurez-vous que la hauteur couvre toute la vue */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Assurez-vous que le texte est visible sur l'image de fond */
+    text-align: center;
+
+
+    .animated-text h1,
+    .animated-text h2 {
+        margin: 0;
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+    }
+
+    .animated-text h2 {
+        animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
 }

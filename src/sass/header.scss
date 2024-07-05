@@ -1,86 +1,25 @@
 .header {
-    display: flex;
-    background-color: rgb(223 148 94);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    background-color: rgb(223, 148, 94) !important; // Fond du header en orange
 
-    nav {
-        display: flex;
-        align-items: center;
+    .navbar-collapse {
+        justify-content: center; // Centre les éléments dans le conteneur une fois le menu ouvert
+        text-align: center; // Centre le texte à l'intérieur du conteneur
+    }
 
-        .burger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
+    .nav-link {
+        color: black !important; // Couleur des liens par défaut
+        margin-right: 20px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        font-family: 'Montserrat';
 
-            .line {
-                width: 25px;
-                height: 3px;
-                background-color: black;
-                margin: 4px 0;
-                transition: all 0.3s ease;
-            }
+        &:hover {
+            color: white !important; // Couleur des liens au survol
         }
+    }
 
-        ul {
-            display: flex;
-            margin-right: 6vw;
-            gap: 20px;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-            margin-bottom: 0px;
-
-            @media screen and (max-width: 768px) {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                margin-right: 0;
-                width: 100%;
-                background-color: rgba(213, 100, 18, 0.82);
-
-                &.nav-active {
-                    display: flex;
-                }
-            }
-
-            a {
-                text-decoration: none;
-                color: rgba(0, 0, 0, 1);
-                font-size: 24px;
-                font-weight: 500;
-                font-family: "Montserrat";
-
-                &:hover {
-                    color: white;
-                }
-
-                @media screen and (max-width: 768px) {
-                    font-size: 18px;
-                }
-            }
-
-            li {
-                margin: 0 10px;
-
-                @media screen and (max-width: 768px) {
-                    margin: 5px 0;
-                }
-            }
-        }
-
-        @media screen and (max-width: 768px) {
-            .burger {
-                display: flex;
-            }
-        }
-
-        .burger.open .line {
-            display: none;
-        }
-
+    #navbarNav {
+        justify-content: center;
 
     }
 }
