@@ -1,19 +1,57 @@
+.container-page {
+    height: 65vh;
+}
+
+
 .skills {
-    height: 71vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
+    gap: 20px;
+    /* Ajoute de l'espace entre les éléments */
 
-    img {
-        height: 15vh;
-        width: 15vw;
-        object-fit: contain;
-        transition: transform 0.3s;
-        cursor: pointer;
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        /* Nécessaire pour positionner le titre par rapport à l'élément parent */
 
-        &:hover {
-            transform: scale(1.1);
+        img {
+            height: 15vh;
+            width: 15vw;
+            object-fit: contain;
+            transition: transform 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .skill-title {
+            position: absolute;
+            bottom: -30px;
+            /* Position en dessous de l'image */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            /* Pour éviter que le titre ne bloque le survol de l'image */
+        }
+
+        &:hover .skill-title {
+            opacity: 1;
+            bottom: -40px;
+            /* Légère animation de montée lors de l'apparition */
         }
     }
 }
