@@ -18,7 +18,7 @@ const Apropos = () => {
             ergonomiques et attrayantes.
           </p>
         </div>
-        <div className="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
+        <div className="col-md-4 col-sm-12 d-flex align-items-center justify-content-center container-img">
           <img
             src="./assets/images/profile1.webp"
             alt="photo Stéphanie Etourneau"

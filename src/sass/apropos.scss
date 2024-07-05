@@ -1,15 +1,21 @@
 .presentation {
     font-family: 'Montserrat', sans-serif;
-    height: 75vh;
     display: flex;
     justify-content: center;
-
+    text-align: center;
 
     p {
-        letter-spacing: 0.3rem;
-        font-weight: 500;
+        letter-spacing: 0.2rem;
+        font-weight: 600;
         font-size: 1em;
         text-shadow: 4px 1px 4px rgb(237, 115, 15);
-        line-height: 2;
+        line-height: 1.5;
     }
+
+    img {
+        width: 25vw;
+        align-content: center;
+        margin-top: 40px;
+    }
+
 }
