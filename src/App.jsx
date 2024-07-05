@@ -8,7 +8,7 @@ import Competences from ".//pages/Competences";
 import Contact from "./pages/Contact";
 
 const App = () => {
-  const basename = import.meta.env.MODE === "production" ? "/Portfolio" : "";
+  const basename = import.meta.env.MODE === "production" ? "/Portfolio/" : "";
   return (
     <BrowserRouter basename={basename}>
       <Header />
