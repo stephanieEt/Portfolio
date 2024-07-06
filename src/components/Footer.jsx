@@ -1,5 +1,3 @@
-import Logo from "./Logo";
-
 const Footer = () => {
   return (
     <div className="footer">

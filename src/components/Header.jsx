@@ -1,13 +1,21 @@
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "./Logo";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [navExpanded, setNavExpanded] = useState(false);
+
+  const handleCollapse = () => {
+    setNavExpanded(false);
+  };
   return (
     <Navbar
       bg="light"
       expand="md"
       className="header sticky-top container-header"
+      onToggle={() => setNavExpanded(!navExpanded)}
+      expanded={navExpanded}
     >
       <NavLink to="/" className="navbar-brand">
         <Logo />
@@ -15,16 +23,20 @@ const Header = () => {
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav">
         <Nav className="ml-auto">
-          <NavLink className="nav-link" to="/Apropos">
+          <NavLink className="nav-link" to="/Apropos" onClick={handleCollapse}>
             A propos
           </NavLink>
-          <NavLink className="nav-link" to="/Projets">
+          <NavLink className="nav-link" to="/Projets" onClick={handleCollapse}>
             Mes projets
           </NavLink>
-          <NavLink className="nav-link" to="/Competences">
+          <NavLink
+            className="nav-link"
+            to="/Competences"
+            onClick={handleCollapse}
+          >
             Mes compétences
           </NavLink>
-          <NavLink className="nav-link" to="/Contact">
+          <NavLink className="nav-link" to="/Contact" onClick={handleCollapse}>
             Contactez-moi
           </NavLink>
         </Nav>
@@ -34,29 +46,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*
-/* <nav>
-        <div
-          className={`burger ${isOpen ? "open" : ""}`}
-          onClick={handleToggle}
-        >
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
-        </div>
-        <ul className={isOpen ? "nav-active" : ""}>
-          <NavLink to="/Apropos" onClick={() => setIsOpen(false)}>
-            <li>A propos</li>
-          </NavLink>
-          <NavLink to="/Projets" onClick={() => setIsOpen(false)}>
-            <li>Mes projets</li>
-          </NavLink>
-          <NavLink to="/Competences" onClick={() => setIsOpen(false)}>
-            <li>Mes compétences</li>
-          </NavLink>
-          <NavLink to="/Contact" onClick={() => setIsOpen(false)}>
-            <li>Contactez-moi</li>
-          </NavLink>
-        </ul>
-      </nav>*/

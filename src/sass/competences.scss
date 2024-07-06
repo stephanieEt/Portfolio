@@ -1,15 +1,9 @@
-.container-page {
-    height: 65vh;
-}
-
-
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
     gap: 20px;
-    /* Ajoute de l'espace entre les éléments */
 
     .skill-item {
         display: flex;
@@ -17,7 +11,6 @@
         align-items: center;
         text-align: center;
         position: relative;
-        /* Nécessaire pour positionner le titre par rapport à l'élément parent */
 
         img {
             height: 15vh;
@@ -34,7 +27,6 @@
         .skill-title {
             position: absolute;
             bottom: -30px;
-            /* Position en dessous de l'image */
             left: 50%;
             transform: translateX(-50%);
             padding: 5px 10px;
@@ -51,7 +43,6 @@
         &:hover .skill-title {
             opacity: 1;
             bottom: -40px;
-            /* Légère animation de montée lors de l'apparition */
         }
     }
 }
