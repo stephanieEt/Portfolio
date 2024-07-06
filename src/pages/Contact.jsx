@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="d-flex justify-content-center align-items-center min-vh-100">
+    <div className="d-flex justify-content-center align-items-center container-page">
       <div className="contact-info">
         <h1>Contactez-moi</h1>
         <div className="info">
