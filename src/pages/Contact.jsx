@@ -5,7 +5,7 @@ const Contact = () => {
         <h1>Contactez-moi</h1>
         <div className="info">
           <p>
-            <strong>Téléphone:</strong> 06/74/07/06/70
+            <strong>Téléphone:</strong> 06-74-07-06-70
           </p>
           <p>
             <strong>Adresse:</strong> 85470 Brétignolles sur mer
