@@ -11,7 +11,7 @@ const Card = ({ data }) => {
 
   return (
     <>
-      <div className="col-md-6 card-img-projet">
+      <div className="col-lg-6 card-img-projet">
         <a href="#" onClick={handleShow}>
           <img src={data.picture} className="img-thumbnail" alt={data.title} />
         </a>
