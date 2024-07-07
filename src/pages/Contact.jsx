@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div class="background">
+    <div className="background">
       <div className="d-flex justify-content-center align-items-center container-page">
         <div className="contact-info">
           <h1>Contactez-moi</h1>
