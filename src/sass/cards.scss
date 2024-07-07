@@ -13,7 +13,9 @@
         border-radius: 20px;
 
         @media screen and (max-width: 768px) {
-            max-height: 250px;
+            min-height: 150px;
+            object-fit: cover;
+
         }
 
         &:hover {
@@ -23,15 +25,19 @@
     }
 
     .card-img-projet {
-        margin-top: 20px;
+        margin-top: 35px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 25px;
+        }
     }
-}
 
-.container-header {
-    border-bottom: none;
-}
+    .container-header {
+        border-bottom: none;
+    }
 
-.container-link-projet {
-    display: flex;
-    justify-content: center;
+    .container-link-projet {
+        display: flex;
+        justify-content: center;
+    }
 }
