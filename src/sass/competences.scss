@@ -37,7 +37,6 @@
             opacity: 0;
             transition: opacity 0.3s;
             pointer-events: none;
-            /* Pour éviter que le titre ne bloque le survol de l'image */
         }
 
         &:hover .skill-title {

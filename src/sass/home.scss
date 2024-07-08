@@ -3,11 +3,9 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    /* Assurez-vous que la hauteur couvre toute la vue */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Assurez-vous que le texte est visible sur l'image de fond */
     text-align: center;
 
     .animated-text h1,
