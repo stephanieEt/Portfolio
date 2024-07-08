@@ -1,25 +1,24 @@
 .header {
-    background-color: rgb(223, 148, 94) !important; // Fond du header en orange
+    background-color: rgb(223, 148, 94) !important;
 
     .navbar-collapse {
-        justify-content: center; // Centre les éléments dans le conteneur une fois le menu ouvert
-        text-align: center; // Centre le texte à l'intérieur du conteneur
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-link {
-        color: black !important; // Couleur des liens par défaut
+        color: black !important;
         margin-right: 20px;
         font-size: 1.25rem;
         font-weight: 500;
         font-family: 'Montserrat';
 
         &:hover {
-            color: white !important; // Couleur des liens au survol
+            color: white !important;
         }
     }
 
     #navbarNav {
         justify-content: center;
-
     }
 }
