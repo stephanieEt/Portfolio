@@ -64,6 +64,14 @@
                 margin: 10px 0;
                 font-size: 1.1em;
             }
+
+            a {
+                color: rgb(51, 9, 9);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
